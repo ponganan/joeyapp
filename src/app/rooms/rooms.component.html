@@ -1,0 +1,19 @@
+<p>App rooms works!</p>
+
+<img src="/assets/horse.jpg" width="200" height="200">
+
+<h3>Welcome to {{hotelName}}</h3>
+
+<div [hidden]="hideRooms">
+    Nuber of Room :
+    <br>
+    <br>
+    <div [innerText]="numberOfRooms"></div>
+</div>
+
+<div *ngIf="room.availableRooms > 0">
+    <!-- Built-in Directives *ngIf แสดงผล เมื่อเข้าเงื่อนไข-->
+    Room Available = {{room.availableRooms}}
+</div>
+
+<button (click)="toggle()">Toggle</button>
