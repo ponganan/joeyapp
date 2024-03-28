@@ -21,4 +21,6 @@ export class RoomsComponent {
     this.hideRooms = !this.hideRooms;
   }
 
+  page = 7;
+
 }
